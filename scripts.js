@@ -106,7 +106,7 @@ fetchJSON(urls[0]).then(result => {
         let percentage = county['bachelorsOrHigher']
         return percentage;
       })
-      .on("mouseover", function (countyData, i) {
+      .on("mousemove", function (countyData, i) {
         let id = i['id']
         let county = educationData.find((elem) => {
           return elem['fips'] === id
